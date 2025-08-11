@@ -7,7 +7,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.hm.colors_spring_beans.Services.ColorPrinter;
-import com.hm.colors_spring_beans.Services.Impl.ColorPrinterImpl;
 
 @SpringBootApplication
 @Slf4j

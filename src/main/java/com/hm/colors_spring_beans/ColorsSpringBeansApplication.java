@@ -13,13 +13,18 @@ import com.hm.colors_spring_beans.Services.Impl.ColorPrinterImpl;
 @Slf4j
 public class ColorsSpringBeansApplication implements CommandLineRunner{
 
+	private ColorPrinter colorPrinter;
+
+	public ColorsSpringBeansApplication(ColorPrinter colorPrinter) {
+		this.colorPrinter = colorPrinter;
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(ColorsSpringBeansApplication.class, args);
 	}
 
 	@Override
 	public void run(String... args) throws Exception {
-		final ColorPrinter colorPrinter = new ColorPrinterImpl();
 		log.info("ColorPrinter instance created: " + colorPrinter.print());
 	}
 
